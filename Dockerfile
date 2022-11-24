@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v1.15.3-1.0
+FROM fluent/fluentd:v1.4
 
 MAINTAINER GoAbout <tech@goabout.com>
 
