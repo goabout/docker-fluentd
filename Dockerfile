@@ -7,6 +7,7 @@ USER root
 RUN apk add --update --virtual .build-deps build-base ruby-dev \
         automake autoconf libtool libc6-compat geoip-dev && \
     apk add --no-cache geoip libmaxminddb && \
+    gem install elasticsearch:7.17.7 && \
     fluent-gem install fluent-plugin-anonymizer && \
     fluent-gem install fluent-plugin-elasticsearch && \
     fluent-gem install fluent-plugin-geoip && \
